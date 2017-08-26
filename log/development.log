@@ -1,0 +1,2500 @@
+Started GET "/" for 127.0.0.1 at 2017-08-11 13:11:01 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/javierjimenez/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/javierjimenez/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 128ms (Views: 6.3ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-08-11 13:11:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2017-08-11 13:11:01 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (63.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (78.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateVehicles (20170811181227)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "vehicles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "placa" varchar, "color" varchar, "año" integer, "categoria" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170811181227"]]
+  [1m[35m (111.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-08-11 18:19:35.797028"], ["updated_at", "2017-08-11 18:19:35.797028"]]
+  [1m[35m (46.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC"], ["color", "blanco"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-11 18:19:39.195228"], ["updated_at", "2017-08-11 18:19:39.195228"]]
+  [1m[35m (116.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC"], ["color", "rojo"], ["año", 1995], ["categoria", 1], ["created_at", "2017-08-11 18:19:39.314590"], ["updated_at", "2017-08-11 18:19:39.314590"]]
+  [1m[35m (62.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF"], ["color", "azul"], ["año", 1996], ["categoria", 2], ["created_at", "2017-08-11 18:19:39.381011"], ["updated_at", "2017-08-11 18:19:39.381011"]]
+  [1m[35m (64.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF"], ["color", "negro"], ["año", 1997], ["categoria", 2], ["created_at", "2017-08-11 18:19:39.447816"], ["updated_at", "2017-08-11 18:19:39.447816"]]
+  [1m[35m (107.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mVehicle Load (1.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 13:42:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehiclesController#index as */*
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" ORDER BY created_at DESC[0m
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 13:47:45 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehiclesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 1.1ms)
+
+
+  
+NameError (undefined local variable or method `vehicles' for #<Api::V1::VehiclesController:0x007f4a70631868>
+Did you mean?  vehicle):
+  
+app/controllers/api/v1/vehicles_controller.rb:11:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2017-08-11 13:48:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicle/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2017-08-11 13:48:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicle/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 13:48:23 -0500
+Processing by Api::V1::VehiclesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.2ms)
+
+
+  
+NameError (undefined local variable or method `vehicles' for #<Api::V1::VehiclesController:0x0055ba420e4258>
+Did you mean?  vehicle):
+  
+app/controllers/api/v1/vehicles_controller.rb:11:in `show'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2017-08-11 13:48:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicle/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 13:48:43 -0500
+Processing by Api::V1::VehiclesController#index as */*
+  [1m[36mVehicle Load (0.7ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" ORDER BY created_at DESC[0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2017-08-11 13:50:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicle/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/vehicle/1" for 127.0.0.1 at 2017-08-11 13:50:34 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/vehicle/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 13:50:37 -0500
+Processing by Api::V1::VehiclesController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 26ms (Views: 2.0ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 14:06:24 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/vehicles/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"placa":"ABC132"
+	"color":"Blanco"
+	"año":"1994"
+	"categoria":"1"
+	
+}
+Started POST "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 14:06:30 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/vehicles/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"placa":"ABC132"
+	"color":"Blanco"
+	"año":"1994"
+	"categoria":"1"
+	
+}
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 14:06:42 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"placa":"ABC132"
+	"color":"Blanco"
+	"año":"1994"
+	"categoria":"1"
+	
+}
+  
+ActionDispatch::Http::Parameters::ParseError (822: unexpected token at '{
+	"placa":"ABC132"
+	"color":"Blanco"
+	"año":"1994"
+	"categoria":"1"
+	
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 14:07:16 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"placa":"ABC132"
+	"color":"Blanco"
+	"año":"1994"
+	"categoria":"1"
+	
+}
+  
+ActionDispatch::Http::Parameters::ParseError (822: unexpected token at '{
+	"placa":"ABC132"
+	"color":"Blanco"
+	"año":"1994"
+	"categoria":"1"
+	
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 14:07:36 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC132"], ["color", "Blanco"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-11 19:07:36.158063"], ["updated_at", "2017-08-11 19:07:36.158063"]]
+  [1m[35m (188.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 207ms (Views: 0.8ms | ActiveRecord: 192.7ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 14:07:57 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC132"], ["color", "Blanco"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-11 19:07:57.935856"], ["updated_at", "2017-08-11 19:07:57.935856"]]
+  [1m[35m (136.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 144ms (Views: 0.4ms | ActiveRecord: 138.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-11 14:08:39 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC132"], ["color", "Blanco"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-11 19:08:39.585699"], ["updated_at", "2017-08-11 19:08:39.585699"]]
+  [1m[35m (129.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 133ms (Views: 0.5ms | ActiveRecord: 129.5ms)
+
+
+Started DELETE "/api/v1/vehicles/7" for 127.0.0.1 at 2017-08-11 14:10:58 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"7", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 7]]
+  [1m[35m (175.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 195ms (Views: 0.9ms | ActiveRecord: 177.7ms)
+
+
+Started PUT "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 14:15:02 -0500
+Processing by Api::V1::VehiclesController#update as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "id"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :id, :vehicle
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `updated_attributes' for #<Vehicle:0x00556a610ab830>
+Did you mean?  update_attributes
+               update_attributes!
+               update_attribute):
+  
+app/controllers/api/v1/vehicles_controller.rb:32:in `update'
+Started PUT "/api/v1/vehicle/1" for 127.0.0.1 at 2017-08-11 14:15:19 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/api/v1/vehicle/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-11 14:16:47 -0500
+Processing by Api::V1::VehiclesController#update as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "id"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: :id, :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "vehicles" SET "placa" = ?, "color" = ?, "updated_at" = ? WHERE "vehicles"."id" = ?[0m  [["placa", "ABC132"], ["color", "Negro"], ["updated_at", "2017-08-11 19:16:47.969879"], ["id", 1]]
+  [1m[35m (125.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 141ms (Views: 0.8ms | ActiveRecord: 127.6ms)
+
+
+Started POST "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-25 10:27:46 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/vehicles/1"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/api/v1/vehicles/" for 127.0.0.1 at 2017-08-25 10:28:03 -0500
+Processing by Api::V1::VehiclesController#index as */*
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" ORDER BY created_at DESC[0m
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:28:52 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC132"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:28:52.936185"], ["updated_at", "2017-08-25 15:28:52.936185"]]
+  [1m[35m (112.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 121ms (Views: 0.9ms | ActiveRecord: 113.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:30:03 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:30:31 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:31:09 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:31:19 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:31:30 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:31:36 -0500
+Processing by Api::V1::VehiclesController#index as */*
+Completed 500 Internal Server Error in 1ms
+
+
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/models/vehicle.rb:11: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/api/v1/vehicles_controller.rb:5:in `index'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:31:56 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"fghjk", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"fghjk", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "fghjk"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:31:56.863150"], ["updated_at", "2017-08-25 15:31:56.863150"]]
+  [1m[35m (142.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 158ms (Views: 1.1ms | ActiveRecord: 145.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:33:05 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 111ms (Views: 0.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:35:31 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 10ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:35:36 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"A", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"A", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:35:40 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:35:40.730164"], ["updated_at", "2017-08-25 15:35:40.730164"]]
+  [1m[35m (97.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 106ms (Views: 1.7ms | ActiveRecord: 99.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:35:51 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:36:01 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:36:01.715102"], ["updated_at", "2017-08-25 15:36:01.715102"]]
+  [1m[35m (76.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 87ms (Views: 0.9ms | ActiveRecord: 79.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:40:26 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:40:26.458785"], ["updated_at", "2017-08-25 15:40:26.458785"]]
+  [1m[35m (115.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 130ms (Views: 1.2ms | ActiveRecord: 116.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:40:32 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "AEI"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:40:32.806305"], ["updated_at", "2017-08-25 15:40:32.806305"]]
+  [1m[35m (81.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 94ms (Views: 0.6ms | ActiveRecord: 88.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:40:34 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "AEI"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:40:34.004987"], ["updated_at", "2017-08-25 15:40:34.004987"]]
+  [1m[35m (115.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 122ms (Views: 0.9ms | ActiveRecord: 115.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:40:35 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "AEI"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:40:35.159487"], ["updated_at", "2017-08-25 15:40:35.159487"]]
+  [1m[35m (162.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 170ms (Views: 1.1ms | ActiveRecord: 164.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:40:42 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "AEI"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:40:42.122723"], ["updated_at", "2017-08-25 15:40:42.122723"]]
+  [1m[35m (147.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 153ms (Views: 0.6ms | ActiveRecord: 147.7ms)
+
+
+Started DELETE "/api/v1/vehicles/1" for 127.0.0.1 at 2017-08-25 10:40:52 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"1", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 1]]
+  [1m[35m (151.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 167ms (Views: 0.9ms | ActiveRecord: 153.0ms)
+
+
+Started DELETE "/api/v1/vehicles/2" for 127.0.0.1 at 2017-08-25 10:40:56 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"2", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 2]]
+  [1m[35m (184.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 190ms (Views: 0.7ms | ActiveRecord: 185.4ms)
+
+
+Started DELETE "/api/v1/vehicles/3" for 127.0.0.1 at 2017-08-25 10:40:58 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"3", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 3]]
+  [1m[35m (125.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 131ms (Views: 1.0ms | ActiveRecord: 127.0ms)
+
+
+Started DELETE "/api/v1/vehicles/" for 127.0.0.1 at 2017-08-25 10:41:00 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/vehicles"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started DELETE "/api/v1/vehicles/4" for 127.0.0.1 at 2017-08-25 10:41:04 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"4", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 4]]
+  [1m[35m (134.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 140ms (Views: 0.7ms | ActiveRecord: 136.0ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:41:33 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "AEI"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:41:33.534988"], ["updated_at", "2017-08-25 15:41:33.534988"]]
+  [1m[35m (139.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 156ms (Views: 0.9ms | ActiveRecord: 141.7ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:43:47 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AEI", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "AEI"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 47ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:43:53 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"Ank", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"Ank", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "Ank"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "Ank"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:43:53.465295"], ["updated_at", "2017-08-25 15:43:53.465295"]]
+  [1m[35m (90.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 97ms (Views: 0.8ms | ActiveRecord: 91.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:43:55 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"Ank", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"Ank", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "Ank"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:56:34 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"Ank", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"Ank", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "Ank"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:56:41 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:56:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC1"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:56:46.284097"], ["updated_at", "2017-08-25 15:56:46.284097"]]
+  [1m[35m (125.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 132ms (Views: 0.6ms | ActiveRecord: 126.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:56:56 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF1"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:56:56.278554"], ["updated_at", "2017-08-25 15:56:56.278554"]]
+  [1m[35m (137.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 142ms (Views: 0.7ms | ActiveRecord: 138.0ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:57:01 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF123"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF123"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:57:01.482084"], ["updated_at", "2017-08-25 15:57:01.482084"]]
+  [1m[35m (131.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 136ms (Views: 0.6ms | ActiveRecord: 133.0ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:57:08 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC123"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC123"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:57:08.671789"], ["updated_at", "2017-08-25 15:57:08.671789"]]
+  [1m[35m (129.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 135ms (Views: 0.6ms | ActiveRecord: 130.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:57:15 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "123"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "123"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:57:15.529932"], ["updated_at", "2017-08-25 15:57:15.529932"]]
+  [1m[35m (128.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 133ms (Views: 0.8ms | ActiveRecord: 128.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:57:59 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "123"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 15ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:58:06 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"1234", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"1234", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "1234"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "1234"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:58:06.101648"], ["updated_at", "2017-08-25 15:58:06.101648"]]
+  [1m[35m (224.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 229ms (Views: 0.6ms | ActiveRecord: 225.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:58:27 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"a1234", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"a1234", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "a1234"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "a1234"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:58:27.304870"], ["updated_at", "2017-08-25 15:58:27.304870"]]
+  [1m[35m (127.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 143ms (Views: 0.8ms | ActiveRecord: 129.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:58:34 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"axs", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"axs", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "axs"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "axs"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:58:34.192438"], ["updated_at", "2017-08-25 15:58:34.192438"]]
+  [1m[35m (89.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 96ms (Views: 0.8ms | ActiveRecord: 89.8ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:58:58 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"axs", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"axs", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "axs"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:59:08 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"axs1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"axs1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "axs1"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "axs1"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:59:08.385296"], ["updated_at", "2017-08-25 15:59:08.385296"]]
+  [1m[35m (128.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 136ms (Views: 0.9ms | ActiveRecord: 129.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 10:59:43 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "1"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 15:59:43.533755"], ["updated_at", "2017-08-25 15:59:43.533755"]]
+  [1m[35m (140.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 156ms (Views: 0.9ms | ActiveRecord: 142.0ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:01:12 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 18ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:01:18 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:01:57 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 17ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:02:15 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:02:19 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC12", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC12", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC12"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:02:20 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC12", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC12", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC12"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:02:20 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC12", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC12", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC12"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:02:35 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:02:54 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC4"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:03:23 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC4"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 13ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:03:24 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC4"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:03:29 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC15", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC15", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC15"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:05:27 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC15", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC15", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC15"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 13ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:05:35 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC1231", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC1231", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC1231"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:05:41 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC9", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC9", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC9"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:07:10 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC9", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC9", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC9"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 20ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:07:15 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"BCA", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"BCA", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "BCA"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:07:24 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:11:32 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:11:37 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC123"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:11:47 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABCgh", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABCgh", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABCgh"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:12:05 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABCERTYG", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABCERTYG", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABCERTYG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:12:40 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABCERTYG", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABCERTYG", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABCERTYG"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:12:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC0", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC0", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC0"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:12:55 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC256"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:14:08 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC256"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 13ms (Views: 0.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:14:09 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC256"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 8ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:14:27 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC256", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC256"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:16:01 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC856", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC856", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC856"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:28:25 -0500
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/models/vehicle.rb:4:in `+'
+app/models/vehicle.rb:4:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:28:46 -0500
+  
+TypeError (no implicit conversion of Array into String):
+  
+app/models/vehicle.rb:4:in `+'
+app/models/vehicle.rb:4:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:28:59 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:29:14 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC123"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:29:17 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+	"placa":"ABC123",
+	"color":"Negro",4
+	"año":"1994",
+	"categoria":"1"
+	
+}
+  
+ActionDispatch::Http::Parameters::ParseError (822: unexpected token at '{
+	"placa":"ABC123",
+	"color":"Negro",4
+	"año":"1994",
+	"categoria":"1"
+	
+}'):
+  
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:113:in `rescue in parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:358:in `block in POST'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch'
+rack (2.0.3) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.3) lib/action_dispatch/http/request.rb:357:in `POST'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:286:in `_wrapper_enabled?'
+actionpack (5.1.3) lib/action_controller/metal/params_wrapper.rb:235:in `process_action'
+activerecord (5.1.3) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.3) lib/abstract_controller/base.rb:124:in `process'
+actionpack (5.1.3) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.3) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.3) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:29:23 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC1234", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC1234", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC1234"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC1234"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:29:23.805305"], ["updated_at", "2017-08-25 16:29:23.805305"]]
+  [1m[35m (167.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 173ms (Views: 0.5ms | ActiveRecord: 168.7ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:29:35 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"5561", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"5561", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "5561"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "5561"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:29:35.504434"], ["updated_at", "2017-08-25 16:29:35.504434"]]
+  [1m[35m (432.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 437ms (Views: 0.4ms | ActiveRecord: 433.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:32:17 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:9: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/vehicle.rb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:33:14 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:9: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/vehicle.rb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:33:18 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/models/vehicle.rb:9: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/models/vehicle.rb:9: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:33:37 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"556d1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"556d1", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "556d1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 13ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:33:47 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:33:57 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC123", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC123"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:34:04 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC456"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC456"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:34:04.757905"], ["updated_at", "2017-08-25 16:34:04.757905"]]
+  [1m[35m (68.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 74ms (Views: 0.9ms | ActiveRecord: 69.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:34:12 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"AC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"AC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "AC456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:34:22 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:34:23 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:34:30 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:35:44 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC456", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:35:48 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC476"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC476"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:35:48.881058"], ["updated_at", "2017-08-25 16:35:48.881058"]]
+  [1m[35m (62.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 69ms (Views: 0.6ms | ActiveRecord: 63.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:35:57 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"C476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"C476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "C476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:03 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"CAB476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"CAB476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "CAB476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:10 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:11 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:12 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:13 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:16 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:17 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:36:41 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:37:15 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:37:16 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:37:17 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:37:17 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:37:31 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF476"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:37:31.338650"], ["updated_at", "2017-08-25 16:37:31.338650"]]
+  [1m[35m (67.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 80ms (Views: 0.5ms | ActiveRecord: 68.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:40:23 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF476", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF476"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 15ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:40:32 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF478"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:40:33 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF478"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:41:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF478"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF478"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:41:46.821142"], ["updated_at", "2017-08-25 16:41:46.821142"]]
+  [1m[35m (67.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 88ms (Views: 0.5ms | ActiveRecord: 70.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:41:53 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC478"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:42:06 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF478", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF478"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:42:13 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF448"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF448"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:42:13.358830"], ["updated_at", "2017-08-25 16:42:13.358830"]]
+  [1m[35m (76.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 82ms (Views: 0.7ms | ActiveRecord: 77.8ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:42:22 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC448"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:48:47 -0500
+  
+NoMethodError (undefined method `w' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:3:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:50:25 -0500
+  
+NoMethodError (undefined method `w' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:3:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:50:27 -0500
+  
+NoMethodError (undefined method `w' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:3:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:51:53 -0500
+  
+ArgumentError (A regular expression or a proc or lambda must be supplied as :with):
+  
+app/models/vehicle.rb:3:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:51:56 -0500
+  
+ArgumentError (A regular expression or a proc or lambda must be supplied as :with):
+  
+app/models/vehicle.rb:3:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:52:21 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC448"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC448"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 16:52:21.718462"], ["updated_at", "2017-08-25 16:52:21.718462"]]
+  [1m[35m (417.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 431ms (Views: 0.6ms | ActiveRecord: 418.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:52:27 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF448"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 11:58:23 -0500
+  
+NoMethodError (undefined method `|' for /\A(ABC+[0-9])/:Regexp):
+  
+app/models/vehicle.rb:4:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:01:32 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF448", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF448"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 17ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:01:40 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF488", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF488", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF488"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF488"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 17:01:40.688333"], ["updated_at", "2017-08-25 17:01:40.688333"]]
+  [1m[35m (69.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 76ms (Views: 0.6ms | ActiveRecord: 71.0ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:01:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF4"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF4"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 17:01:46.637266"], ["updated_at", "2017-08-25 17:01:46.637266"]]
+  [1m[35m (65.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 70ms (Views: 0.6ms | ActiveRecord: 66.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:01:52 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC4", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC4"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC4"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 17:01:52.379023"], ["updated_at", "2017-08-25 17:01:52.379023"]]
+  [1m[35m (68.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 75ms (Views: 0.5ms | ActiveRecord: 69.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:02:00 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ds", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ds", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ds"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:05:14 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ds", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ds", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ds"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:05:43 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ds", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ds", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ds"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 13ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:05:49 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"16", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"16", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "16"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:14:38 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC789", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"ABC789", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC789"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC789"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 17:14:38.779444"], ["updated_at", "2017-08-25 17:14:38.779444"]]
+  [1m[35m (60.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 78ms (Views: 0.6ms | ActiveRecord: 62.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:15:03 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC489", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC489", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC489"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "ABC489"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 17:15:03.665139"], ["updated_at", "2017-08-25 17:15:03.665139"]]
+  [1m[35m (102.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 107ms (Views: 0.5ms | ActiveRecord: 102.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:15:55 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC489", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC489", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameters: :categoria, :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC489"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:16:00 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC589", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC589", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameters: :categoria, :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC589"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "ABC589"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 17:16:00.048816"], ["updated_at", "2017-08-25 17:16:00.048816"]]
+  [1m[35m (62.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 72ms (Views: 0.6ms | ActiveRecord: 63.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:20:42 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC589", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC589", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `category' for #<Api::V1::VehiclesController:0x007fdd04292910>):
+  
+app/controllers/api/v1/vehicles_controller.rb:49:in `vehicle_params'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:20:56 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF589", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF589", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `category' for #<Api::V1::VehiclesController:0x0055bd0e73f9a8>):
+  
+app/controllers/api/v1/vehicles_controller.rb:49:in `vehicle_params'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:32:52 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/controllers/api/v1/vehicles_controller.rb:34: syntax error, unexpected keyword_else, expecting keyword_end):
+  
+app/controllers/api/v1/vehicles_controller.rb:34: syntax error, unexpected keyword_else, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:33:03 -0500
+  
+SyntaxError (/home/javierjimenez/transporte/app/controllers/api/v1/vehicles_controller.rb:34: syntax error, unexpected keyword_else, expecting keyword_end):
+  
+app/controllers/api/v1/vehicles_controller.rb:34: syntax error, unexpected keyword_else, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:33:15 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/javierjimenez/transporte/app/controllers/api/v1/vehicles_controller.rb:34: syntax error, unexpected keyword_else, expecting keyword_end):
+  
+app/controllers/api/v1/vehicles_controller.rb:34: syntax error, unexpected keyword_else, expecting keyword_end
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:34:53 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF589", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF589", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF589"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "DEF589"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 17:34:53.407867"], ["updated_at", "2017-08-25 17:34:53.407867"]]
+  [1m[35m (71.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 88ms (Views: 1.0ms | ActiveRecord: 73.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:36:23 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF589", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF589", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF589"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 20ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:36:43 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF582", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF582", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF582"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "DEF582"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 17:36:43.861291"], ["updated_at", "2017-08-25 17:36:43.861291"]]
+  [1m[35m (91.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 99ms (Views: 1.5ms | ActiveRecord: 91.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:38:54 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF582", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF582", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF582"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:43:09 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF582", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF582", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF582"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:43:16 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF482", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF482", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF482"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "DEF482"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 17:43:16.807266"], ["updated_at", "2017-08-25 17:43:16.807266"]]
+  [1m[35m (126.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 132ms (Views: 0.7ms | ActiveRecord: 127.7ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 12:48:16 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF452"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "DEF452"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 17:48:16.367900"], ["updated_at", "2017-08-25 17:48:16.367900"]]
+  [1m[35m (140.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 161ms (Views: 1.1ms | ActiveRecord: 142.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:21:29 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.1ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/api/v1/vehicles_controller.rb:15:in `printf'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:21:37 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/api/v1/vehicles_controller.rb:15:in `printf'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:22:05 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (too few arguments):
+  
+app/controllers/api/v1/vehicles_controller.rb:15:in `printf'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:23:04 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms)
+
+
+  
+NoMethodError (undefined method `params' for #<Vehicle:0x0055c57a21fbc0>):
+  
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:23:22 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF452"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 22ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:24:12 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF452", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF452"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:40:38 -0500
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:41:15 -0500
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:42:27 -0500
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:42:33 -0500
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:42:52 -0500
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started GET "/api/v1/vehicles/" for 127.0.0.1 at 2017-08-25 13:45:00 -0500
+Processing by Api::V1::VehiclesController#index as */*
+Completed 500 Internal Server Error in 35ms
+
+
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+app/controllers/api/v1/vehicles_controller.rb:5:in `index'
+Started GET "/api/v1/vehicles/" for 127.0.0.1 at 2017-08-25 13:45:32 -0500
+Processing by Api::V1::VehiclesController#index as */*
+  [1m[36mVehicle Load (14.2ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" ORDER BY created_at DESC[0m
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 15.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:47:07 -0500
+  
+NameError (undefined local variable or method `vehicle' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:8:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:47:36 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7564", "color"=>"Negro", "año"=>"1994", "categoria"=>"1", "vehicle"=>{"placa"=>"DEF7564", "color"=>"Negro", "año"=>"1994", "categoria"=>"1"}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF7564"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF7564"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 18:47:36.616369"], ["updated_at", "2017-08-25 18:47:36.616369"]]
+  [1m[35m (141.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 163ms (Views: 0.5ms | ActiveRecord: 144.4ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:47:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7564", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7564", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF7564"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:47:55 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF7"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "DEF7"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 18:47:55.192606"], ["updated_at", "2017-08-25 18:47:55.192606"]]
+  [1m[35m (154.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 160ms (Views: 0.6ms | ActiveRecord: 155.5ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:51:52 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `vehicle' for #<Api::V1::VehiclesController:0x0055c57a7954b0>):
+  
+app/controllers/api/v1/vehicles_controller.rb:43:in `vehicle_params'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:51:57 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `vehicle' for #<Api::V1::VehiclesController:0x0055c57a51a2d0>):
+  
+app/controllers/api/v1/vehicles_controller.rb:43:in `vehicle_params'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 13:55:45 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (undefined local variable or method `vehicle' for #<Api::V1::VehiclesController:0x007f6b6445cc58>):
+  
+app/controllers/api/v1/vehicles_controller.rb:43:in `vehicle_params'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:18:53 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.9ms)
+
+
+  
+NameError (undefined local variable or method `vehicle' for #<Api::V1::VehiclesController:0x007f6b7400db88>):
+  
+app/controllers/api/v1/vehicles_controller.rb:43:in `vehicle_params'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:19:36 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 1.5ms)
+
+
+  
+NoMethodError (undefined method `put' for #<Api::V1::VehiclesController:0x0055c57a589c48>
+Did you mean?  putc
+               puts):
+  
+app/controllers/api/v1/vehicles_controller.rb:16:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:19:54 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF7156"], ["LIMIT", 1]]
+  [1m[35mSQL (16.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["placa", "DEF7156"], ["color", "Negro"], ["año", 1994], ["created_at", "2017-08-25 19:19:54.141927"], ["updated_at", "2017-08-25 19:19:54.141927"]]
+  [1m[35m (136.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 196ms (Views: 0.6ms | ActiveRecord: 154.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:21:22 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Unpermitted parameter: :vehicle
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF7156"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 18ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:35:22 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `to_int' for nil:NilClass
+Did you mean?  to_i
+               taint):
+  
+app/models/vehicle.rb:19:in `category'
+app/controllers/api/v1/vehicles_controller.rb:15:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:35:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.4ms)
+
+
+  
+NoMethodError (undefined method `*' for //:Regexp):
+  
+app/controllers/api/v1/vehicles_controller.rb:18:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:36:28 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF7156", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+NoMethodError (undefined method `*' for //:Regexp):
+  
+app/controllers/api/v1/vehicles_controller.rb:18:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:39:46 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC14556", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC14556", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 0..1)):
+  
+app/controllers/api/v1/vehicles_controller.rb:17:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:45:21 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC14556", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC14556", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/api/v1/vehicles_controller.rb:17:in `create'
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" ORDER BY "vehicles"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:46:36 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC023", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC023", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 4, expected 1)):
+  
+app/controllers/api/v1/vehicles_controller.rb:17:in `create'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:50:19 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF023", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF023", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF023"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF023"], ["color", "Negro"], ["año", 1994], ["categoria", 0], ["created_at", "2017-08-25 19:50:19.882019"], ["updated_at", "2017-08-25 19:50:19.882019"]]
+  [1m[35m (133.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 154ms (Views: 0.5ms | ActiveRecord: 136.6ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:51:10 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF023", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF023", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF023"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 11ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:52:29 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF023", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF023", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF023"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 71ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:52:41 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC54023", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC54023", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC54023"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC54023"], ["color", "Negro"], ["año", 1994], ["categoria", 0], ["created_at", "2017-08-25 19:52:41.333193"], ["updated_at", "2017-08-25 19:52:41.333193"]]
+  [1m[35m (120.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 127ms (Views: 1.2ms | ActiveRecord: 121.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:54:42 -0500
+  
+NameError (undefined local variable or method `categoria' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:20:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:55:24 -0500
+  
+NameError (undefined local variable or method `categoria' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:20:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:56:37 -0500
+  
+NameError (undefined local variable or method `categoria' for Vehicle (call 'Vehicle.connection' to establish a connection):Class):
+  
+app/models/vehicle.rb:22:in `<class:Vehicle>'
+app/models/vehicle.rb:1:in `<top (required)>'
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:58:59 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"DEF54023", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"DEF54023", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "DEF54023"], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "DEF54023"], ["color", "Negro"], ["año", 1994], ["categoria", 2], ["created_at", "2017-08-25 19:58:59.153338"], ["updated_at", "2017-08-25 19:58:59.153338"]]
+  [1m[35m (125.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 140ms (Views: 0.7ms | ActiveRecord: 127.3ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 14:59:21 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC59823", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC59823", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC59823"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC59823"], ["color", "Negro"], ["año", 1994], ["categoria", 2], ["created_at", "2017-08-25 19:59:21.543836"], ["updated_at", "2017-08-25 19:59:21.543836"]]
+  [1m[35m (89.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 96ms (Views: 0.5ms | ActiveRecord: 91.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 15:02:14 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC99823", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC99823", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC99823"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC99823"], ["color", "Negro"], ["año", 1994], ["categoria", 2], ["created_at", "2017-08-25 20:02:14.251681"], ["updated_at", "2017-08-25 20:02:14.251681"]]
+  [1m[35m (133.7ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 154ms (Views: 0.5ms | ActiveRecord: 135.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-25 15:04:12 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC95623", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC95623", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC95623"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC95623"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-25 20:04:12.697221"], ["updated_at", "2017-08-25 20:04:12.697221"]]
+  [1m[35m (125.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 143ms (Views: 0.8ms | ActiveRecord: 127.1ms)
+
+
+Started GET "/api/v1/vehicles/" for 127.0.0.1 at 2017-08-26 05:28:50 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::VehiclesController#index as */*
+  [1m[36mVehicle Load (0.8ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles" ORDER BY created_at DESC[0m
+Completed 200 OK in 41ms (Views: 23.3ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-26 05:29:30 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC95623", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC95623", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC95623"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 36ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-26 05:30:05 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"ABC2315", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"ABC2315", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "ABC2315"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("placa", "color", "año", "categoria", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["placa", "ABC2315"], ["color", "Negro"], ["año", 1994], ["categoria", 1], ["created_at", "2017-08-26 10:30:05.167963"], ["updated_at", "2017-08-26 10:30:05.167963"]]
+  [1m[35m (141.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 150ms (Views: 1.0ms | ActiveRecord: 142.1ms)
+
+
+Started POST "/api/v1/vehicles" for 127.0.0.1 at 2017-08-26 05:30:19 -0500
+Processing by Api::V1::VehiclesController#create as */*
+  Parameters: {"placa"=>"2315", "color"=>"Negro", "año"=>"1994", "categoria"=>"", "vehicle"=>{"placa"=>"2315", "color"=>"Negro", "año"=>"1994", "categoria"=>""}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVehicle Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" WHERE "vehicles"."placa" = ? LIMIT ?[0m  [["placa", "2315"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/api/v1/vehicles/4" for 127.0.0.1 at 2017-08-26 05:30:42 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"4", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Vehicle with 'id'=4):
+  
+app/controllers/api/v1/vehicles_controller.rb:36:in `destroy'
+Started DELETE "/api/v1/vehicles/5" for 127.0.0.1 at 2017-08-26 05:30:46 -0500
+Processing by Api::V1::VehiclesController#destroy as */*
+  Parameters: {"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1", "id"=>"5", "vehicle"=>{"placa"=>"ABC132", "color"=>"Blanco", "año"=>"1994", "categoria"=>"1"}}
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "vehicles" WHERE "vehicles"."id" = ?[0m  [["id", 5]]
+  [1m[35m (77.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 83ms (Views: 0.6ms | ActiveRecord: 78.3ms)
+
+
